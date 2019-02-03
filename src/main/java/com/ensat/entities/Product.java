@@ -22,8 +22,16 @@ public class Product {
 
     private String productId;
     private String name;
+    private String category;
     private BigDecimal price;
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
     public String getName() {
         return name;
     }

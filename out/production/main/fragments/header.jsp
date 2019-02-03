@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
@@ -15,8 +17,8 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
                     <ul class="nav navbar-nav">
-                        <li><a href="#" th:href="@{/products}">Products</a></li>
-                        <li><a   th:href="@{/product/new}">Create new product</a></li>
+                        <li><a href="<c:url value="/products"/>"> Products</a></li>
+                        <li><a href="<c:url value="/product/new"/>">Create new product</a></li>
                     </ul>
 
                 </div>
